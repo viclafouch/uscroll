@@ -1,0 +1,30 @@
+{
+  "name": "uscroll",
+  "description": "📌 A javascript plugin that show you the scrollTop position in live",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Victor de la Fouchardière",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viclafouch/uscroll/issues"
+  },
+  "homepage": "https://github.com/viclafouch/uscroll#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "gulp-sourcemaps": "2.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "browserslist": "^2.9.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean-css": "^3.5.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-print": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^2.0.0"
+  }
+}
