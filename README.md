@@ -2,7 +2,7 @@
 
 A javascript plugin that show you a custum scrollbar in different position.
 
-Demo available here : 
+Demo available here : http://www.victor-de-la-fouchardiere.fr/uscroll/demo.html
 
 ## Usage
 
