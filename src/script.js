@@ -1,23 +1,26 @@
 class uscroll {
 
-	static bind(position, color = null) {
-		new uscroll(position, color);
+	static bind(position, color = null, scrollbar = false) {
+		new uscroll(position, color, scrollbar);
 	}
 
-	constructor(position, color) {
+	constructor(position, color, scrollbar) {
 		let positions = ['top', 'right', 'bottom', 'left'];
 		
 		if (positions.indexOf(position) > -1) {
 			this.position = position;
 		} else {
 			this.position = 'right';
+		}	
+
+		if (scrollbar == true) {
+			this.scrollbar = true;
 		}
 
 		this.color = color;
 		this.element = this.creatScrollBar();
 
 		window.addEventListener('scroll', this.scroll.bind(this), false);
-
 	}
 
 	scroll() {
@@ -51,8 +54,15 @@ class uscroll {
 			uscroll.classList.add('uscroll__'+this.color);
 		}
 
+		if (this.scrollbar == true) {
+			document.documentElement.style.msOverflowStyle = 'auto';
+		} else {
+			document.documentElement.style.msOverflowStyle = 'none';
+			document.body.classList.add('uscroll_hidescrollbar');
+		}
 		uscroll.classList.add('uscroll__'+this.position);
 		document.body.appendChild(uscroll);
+
 		this.uscroll = uscroll;
 
 		return this.uscroll;
