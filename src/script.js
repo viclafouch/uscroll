@@ -1,4 +1,4 @@
-class uscroll {
+class uScroll {
 
 	static bind(position, color = null, scrollbar = false) {
 		new uscroll(position, color, scrollbar);
