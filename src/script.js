@@ -1,7 +1,7 @@
 class uScroll {
 
 	static bind(position, color = null, scrollbar = false) {
-		new uscroll(position, color, scrollbar);
+		new uScroll(position, color, scrollbar);
 	}
 
 	constructor(position, color, scrollbar) {
